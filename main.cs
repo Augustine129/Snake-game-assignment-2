@@ -15,20 +15,18 @@ using System;
 
 class Program {
   
-  public static void Main (string[] args) {
+  static void Main (string[] args) {
 
-    var playerNum = -1;
+    int playerNum = -1;
+    string[] gameGrid = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
 
     do
     {
       playerNum = NextPlayer(playerNum);
       
       GameInstruction(playerNum);
-      DisplayGameBoard();
-
-    string playerInput = Console.ReadLine();
-
-    Console.Clear();
+      DisplayGameBoard(gameGrid);
+      GameLogic(gameGrid, playerNum);
     
     }while (true);
   }
@@ -51,16 +49,60 @@ class Program {
 
   }
 
-  static void DisplayGameBoard() 
+  static void DisplayGameBoard(string[] gameGrid) 
   {
     //Display the game board
-    Console.WriteLine(" 1 | 2 | 3 ");
+    Console.WriteLine($"{gameGrid[0]} | {gameGrid[1]} | {gameGrid[2]}");
     Console.WriteLine(" ---+---+--- ");
-    Console.WriteLine(" 4 | 5 | 6 ");
+    Console.WriteLine($"{gameGrid[3]} | {gameGrid[4]} | {gameGrid[5]}");
     Console.WriteLine(" ---+---+--- ");
-    Console.WriteLine(" 7 | 8 | 9 ");
+    Console.WriteLine($"{gameGrid[6]} | {gameGrid[7]} | {gameGrid[8]}");
 
   }
+
+  static void GameLogic(string[] gameGrid, int playerNum)
+  {
+    string playerInput = Console.ReadLine();
+
+    if(playerInput.Equals("1") ||
+    playerInput.Equals("2") ||
+    playerInput.Equals("3") ||
+    playerInput.Equals("4") ||
+    playerInput.Equals("5") ||
+    playerInput.Equals("6") ||
+    playerInput.Equals("7") ||
+    playerInput.Equals("9") ||
+    playerInput.Equals("9")) 
+    
+    {
+
+      Console.Clear();
+
+      int.TryParse(playerInput, out var displayGameGrid);
+
+      string currentGrid = gameGrid[displayGameGrid - 1];
+
+      if(currentGrid.Equals("X") || currentGrid.Equals("O"))
+      {
+        Console.WriteLine("Please enter the correct value");
+      }
+      else
+      {
+        gameGrid[displayGameGrid - 1 ] = DisplayerPlayerGrid(playerNum);
+      }
+
+    }
+
+    static string DisplayerPlayerGrid(int players)
+    {
+      if(players % 2 == 0)
+      {
+        return "O";
+      }
+      return "X";
+    }
+  }
+
 
   static int NextPlayer(int players) 
   {
