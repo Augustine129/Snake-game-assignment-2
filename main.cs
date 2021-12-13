@@ -19,6 +19,7 @@ class Program {
 
     int playerNum = -1;
     string[] gameGrid = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
+    int gameScores = 0;
 
     do
     {
@@ -28,8 +29,28 @@ class Program {
       GameInstruction(playerNum);
       DisplayGameBoard(gameGrid);
       GameLogic(gameGrid, playerNum);
+      gameScores = CheckWhoWon(gameGrid);
     
-    }while (true);
+    }while (gameScores.Equals(0));
+
+    if (gameScores.Equals(1))
+    {
+      Console.Clear();
+      GameInstruction(playerNum);
+      DisplayGameBoard(gameGrid);
+
+      Console.WriteLine($"Well Done Player {playerNum} you won this game ");
+    }
+
+  }
+
+  private static int CheckWhoWon(string[] gameGrid) 
+  {
+    if(gameGrid[0].Equals(gameGrid[1]) && gameGrid[1].Equals(gameGrid[2]))
+    {
+      return 1;
+    }
+    return 0;
   }
 
   static void GameInstruction( int PlayerTurn)
