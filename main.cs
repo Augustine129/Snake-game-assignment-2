@@ -22,6 +22,7 @@ class Program {
 
     do
     {
+      Console.Clear();
       playerNum = NextPlayer(playerNum);
       
       GameInstruction(playerNum);
@@ -62,9 +63,14 @@ class Program {
 
   static void GameLogic(string[] gameGrid, int playerNum)
   {
-    string playerInput = Console.ReadLine();
+    bool correctValue = true;
 
-    if(playerInput.Equals("1") ||
+
+    do {
+      string playerInput = Console.ReadLine();
+
+    if(!string.IsNullOrEmpty(playerInput) &&
+    (playerInput.Equals("1") ||
     playerInput.Equals("2") ||
     playerInput.Equals("3") ||
     playerInput.Equals("4") ||
@@ -72,11 +78,9 @@ class Program {
     playerInput.Equals("6") ||
     playerInput.Equals("7") ||
     playerInput.Equals("9") ||
-    playerInput.Equals("9")) 
+    playerInput.Equals("9"))) 
     
     {
-
-      Console.Clear();
 
       int.TryParse(playerInput, out var displayGameGrid);
 
@@ -89,10 +93,17 @@ class Program {
       else
       {
         gameGrid[displayGameGrid - 1 ] = DisplayerPlayerGrid(playerNum);
+        correctValue = false;
       }
 
     }
+    else
+    {
+      Console.WriteLine("Invalid value");
+    }
 
+    } while (correctValue);
+    
     static string DisplayerPlayerGrid(int players)
     {
       if(players % 2 == 0)
@@ -102,7 +113,6 @@ class Program {
       return "X";
     }
   }
-
 
   static int NextPlayer(int players) 
   {
