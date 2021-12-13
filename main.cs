@@ -161,10 +161,11 @@ class Program {
 
   static void GameLogic(string[] gameGrid, int playerNum)
   {
-    bool correctValue = true;
+    bool notCorrectValue = true;
 
 
     do {
+
       string playerInput = Console.ReadLine();
 
     if(!string.IsNullOrEmpty(playerInput) &&
@@ -175,7 +176,7 @@ class Program {
     playerInput.Equals("5") ||
     playerInput.Equals("6") ||
     playerInput.Equals("7") ||
-    playerInput.Equals("9") ||
+    playerInput.Equals("8") ||
     playerInput.Equals("9"))) 
     
     {
@@ -191,7 +192,7 @@ class Program {
       else
       {
         gameGrid[displayGameGrid - 1 ] = DisplayerPlayerGrid(playerNum);
-        correctValue = false;
+        notCorrectValue = false;
       }
 
     }
@@ -200,7 +201,7 @@ class Program {
       Console.WriteLine("Invalid value");
     }
 
-    } while (correctValue);
+    } while (notCorrectValue);
     
     static string DisplayerPlayerGrid(int players)
     {
