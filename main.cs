@@ -28,29 +28,106 @@ class Program {
       
       GameInstruction(playerNum);
       DisplayGameBoard(gameGrid);
+
       GameLogic(gameGrid, playerNum);
       gameScores = CheckWhoWon(gameGrid);
     
     }while (gameScores.Equals(0));
 
+    Console.Clear();
+    GameInstruction(playerNum);
+    DisplayGameBoard(gameGrid);
+    
+
     if (gameScores.Equals(1))
     {
-      Console.Clear();
-      GameInstruction(playerNum);
-      DisplayGameBoard(gameGrid);
-
       Console.WriteLine($"Well Done Player {playerNum} you won this game ");
+    }
+
+    if(gameScores.Equals(2))
+    {
+      Console.WriteLine($"Unfortunatley its a drwaw :(");
+
     }
 
   }
 
   private static int CheckWhoWon(string[] gameGrid) 
   {
-    if(gameGrid[0].Equals(gameGrid[1]) && gameGrid[1].Equals(gameGrid[2]))
+    if(CheckGameWinner(gameGrid))
     {
       return 1;
     }
+
+    if(CheckGameDraw(gameGrid))
+    {
+      return 2;
+    }
     return 0;
+    
+  }
+
+   private static bool CheckGameDraw(string[] gameGrid)
+    {
+       return gameGrid[0] != "1" &&
+              gameGrid[1] != "2" &&
+              gameGrid[2] != "3" &&
+              gameGrid[3] != "4" &&
+              gameGrid[4] != "5" &&
+              gameGrid[5] != "6" &&
+              gameGrid[6] != "7" &&
+              gameGrid[7] != "8" &&
+              gameGrid[8] != "9";
+    }
+
+    private static bool CheckGameWinner(string[] gameGrid)
+    {
+    if (CheckIfGridTheSame(gameGrid, 0, 1, 2))
+    {
+        return true;
+    }
+
+    if (CheckIfGridTheSame(gameGrid, 3, 4, 5))
+    {
+        return true;
+    }
+
+    if (CheckIfGridTheSame(gameGrid, 6, 7, 8))
+    {
+        return true;
+    }
+
+    if (CheckIfGridTheSame(gameGrid, 0, 3, 6))
+    {
+        return true;
+    }
+
+    if (CheckIfGridTheSame(gameGrid, 1, 4, 7))
+    {
+        return true;
+    }
+
+    if (CheckIfGridTheSame(gameGrid, 2, 5, 8))
+    {
+        return true;
+    }
+
+    if (CheckIfGridTheSame(gameGrid, 0, 4, 8))
+    {
+        return true;
+    }
+
+    if (CheckIfGridTheSame(gameGrid, 2, 4, 6))
+    {
+        return true;
+    }
+
+    return false;
+}
+
+  private static bool CheckIfGridTheSame(string[] testGameGrid, int p1, int p2, int p3) 
+  {
+     return testGameGrid[p1].Equals(testGameGrid[p2]) &&testGameGrid[p2].Equals(testGameGrid[p3]);
   }
 
   static void GameInstruction( int PlayerTurn)
