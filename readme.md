@@ -38,31 +38,16 @@ My work plan is to divide the overall problem into smaller tasks, which were;
 - Display of player 2's position.
 - Display of the 3 x 3 grid.
 
-Each task will be noted on my to-do list and worked on individually, so I will take an agile approach to development. I will self-assess the quality of the code I have written through regular code reviews. This will help me identify any errors in my code. Throughout the development process, I will validate all user input and internal processes.
+Each task will be noted on my kanban board and worked on individually, so I will take an agile approach to development. I will self-assess the quality of the code I have written through regular code reviews. This will help me identify any errors in my code. Throughout the development process, I will validate all user input and internal processes.
 
 I have also decided to use version control. For this, I have used git. I created branches and PRs and merged the code into main.
 
-I went through the requirements from the task and created a to do list for it. As shown in the following diagram
+I went through the requirements from the task and created a kanban board for it. As shown in the following diagram
+
+https://replit.com/@Augustine129/Tic-tac-toe-game#Screenshot%202022-01-08%20at%2021.23.03.png
 
 
-### Augustine to-do list 
-
-List of things to do 
-
-- Provide introductions to the game
- - Greetings
- - Display player 1 is X and player 2 is from
-- Display whose turn it is to play the game 
-- Display a game plan the game has 3 rows and 3 columns 
-- As players place their markers on the board, 
-- I need to update the table to indicate which player's turn it is. 
-- After each round, a winner must be determined.
-- If there is no winner, the player must continue playing. 
-- If all markers are placed and there is no winner and the game is tied, the game should end. 
-- If there is a winner, the game should stop.
-
-
-## Thoughtful statement 
+## Thoughtful Reflective  statement 
 
 The way to improve the development of this project would be to include an AI feature, such as player vs. computer. During the early testing phases, more bugs occurred with this feature. In particular, one bug was that the wrong 'winner' was displayed in the game. Consequently, the project would be less credible if it included this feature.
 
