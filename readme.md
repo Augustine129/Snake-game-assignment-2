@@ -26,26 +26,24 @@ Tic-Tac-Toe is a very simple game for two players. So only two players can play 
 
 #### b. *UML style diagram illustrating initial overall solution.* 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+https://replit.com/@Augustine129/Tic-tac-toe-game#Screenshot%202022-01-08%20at%2020.56.20.png
 
 
 
 ## Initial working plan, overall, development stategy and approach to quality:
 
-My work plan is to break the overall problem into smaller tasks. Each task will be noted on my to-do list and worked on individually, so I will take an agile approach to development. I will self-assess the quality of the code I have written through regular code reviews. This will help me identify any errors in my code. Throughout the development process, I will validate all user input and internal processes.
+My work plan is to divide the overall problem into smaller tasks, which were;
+
+- Displaying the position of player 1.
+- Display of player 2's position.
+- Display of the 3 x 3 grid.
+
+Each task will be noted on my to-do list and worked on individually, so I will take an agile approach to development. I will self-assess the quality of the code I have written through regular code reviews. This will help me identify any errors in my code. Throughout the development process, I will validate all user input and internal processes.
+
+I have also decided to use version control. For this, I have used git. I created branches and PRs and merged the code into main.
+
+I went through the requirements from the task and created a to do list for it. As shown in the following diagram
+
 
 ### Augustine to-do list 
 
