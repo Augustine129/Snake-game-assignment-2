@@ -4,7 +4,7 @@ Tic-Tac-Toe is a very simple game for two players. So only two players can play 
 
 ## 1. Challenge Outline (academic standard: pass level detail: section required for pass) – 10%
 
-a. *Summary and review of the problem, overall proposed solution.*
+#### a. *Summary and review of the problem, overall proposed solution.*
  
   - This is a clone of the classic Tic Tac Toe game.
  
@@ -24,7 +24,24 @@ a. *Summary and review of the problem, overall proposed solution.*
     
   - If there is no winner it will keep playing.
 
-b. *UML style diagram illustrating initial overall solution.* 
+#### b. *UML style diagram illustrating initial overall solution.* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Initial working plan, overall, development stategy and approach to quality:
 
@@ -47,7 +64,7 @@ List of things to do
 - If there is a winner, the game should stop.
 
 
-### Thoughtful statement 
+## Thoughtful statement 
 
 The way to improve the development of this project would be to include an AI feature, such as player vs. computer. During the early testing phases, more bugs occurred with this feature. In particular, one bug was that the wrong 'winner' was displayed in the game. Consequently, the project would be less credible if it included this feature.
 
