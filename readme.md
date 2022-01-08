@@ -47,4 +47,11 @@ List of things to do
 - If there is a winner, the game should stop.
 
 
+### Thoughtful statement 
+
+The way to improve the development of this project would be to include an AI feature, such as player vs. computer. During the early testing phases, more bugs occurred with this feature. In particular, one bug was that the wrong 'winner' was displayed in the game. Consequently, the project would be less credible if it included this feature.
+
+For an OOP-based project, encapsulation was the best feature to include. However, there are three other principles, including abstraction, inheritance, and polymorphism, that would make this a pure OOP project.
+
+
 
