@@ -5,6 +5,7 @@ Tic-Tac-Toe is a very simple game for two players. So only two players can play 
 ## 1. challenge outline (academic standard: pass level detail: section required for pass) - 10%.
 
 #### a. *Summary and overview of the problem, overall proposed solution. 
+
 - This is a clone of the classic tic tac toe game. 
 - At the beginning, the players' characters are shown: player 1 is X and player 2 is O. 
 - Then it shows whose turn it is. 
@@ -37,6 +38,10 @@ An important challenge before the design was to indicate the winner in the game.
 
 I also learned about code smells and code refactoring. An example of code refactoring would be to use switch statements instead of if statements in line 48, because switch statements work faster and are usually more efficient. 
 The switch statement works better than multiple if statements when you enter input directly without any condition checking in the statements. Switch statements work well when you want to improve the readability of the code and there are many alternatives available.
+
+## OOP Priciples
+
+Since the class members are declared so that only the functions within the class game can access them line 59, the first access specifier is private. This access specifier was introduced to demonstrate encapsulation. Also, class members are available only when needed, unlike class members that are open and need to be closed.  
 
 
 ## Thoughtful statement 
