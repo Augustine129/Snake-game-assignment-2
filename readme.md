@@ -33,6 +33,12 @@ I went through the requirements of the task and created a Kanban board for it. A
 
 https://replit.com/@Augustine129/Tic-tac-toe-game#Screenshot%202022-01-08%20at%2021.23.03.png
 
+An important challenge before the design was to indicate the winner in the game. The winner function should accept a board as input and return the winner of the board if there is one. If player 1 won the game, the function should return this result.
+
+I also learned about code smells and code refactoring. An example of code refactoring would be to use switch statements instead of if statements in line 48, because switch statements work faster and are usually more efficient. 
+The switch statement works better than multiple if statements when you enter input directly without any condition checking in the statements. Switch statements work well when you want to improve the readability of the code and there are many alternatives available.
+
+
 ## Thoughtful statement 
 
 One way to improve the development of this project would be to include an AI feature, such as player vs. computer. During the early stages of testing, more bugs occurred with this feature. One bug in particular was that the wrong 'winner' was displayed in the game. Consequently, the project would be less credible if it included this feature.
