@@ -30,20 +30,25 @@ Each task will be noted on my Kanban board and worked on individually, so I will
 
 I have also decided to use version control. For this, I have used git. I created branches and PRs and merged the code into main.
 
-I went through the requirements of the task and created a Kanban board for it. As shown in the following diagram
+## Analysis and decomposition of the overall problem into key ‘epic’ style tasks:
+
+My approach on creating this systm will be break down down the epic, into smallr stories that can be worked on
 
 https://replit.com/@Augustine129/Tic-tac-toe-game#Screenshot%202022-01-08%20at%2021.23.03.png
 
-A key challenge before the design was to specify the winner in the game. The function winner should accept a board as input and return the winner of the board if there is one. If player 1 won the game, the function should return this result.
 
+A key pre design challenge was to specify the winner in the game. The function winner should accept a board as input and return the winner of the board if there is one. If player 1 won the game, the function should return this result.
+
+
+## Analysis with embedded examples of key code refactoring, reuse, smells:
 I also learned about code smells and code refactoring. An example of code refactoring would be to use switch statements instead of if statements in line 48, because switch statements work faster and are usually more efficient. 
 The switch statement works better than multiple if statements when you enter input directly without performing condition checking in the statements. Switch statements work well when you want to improve code readability, and there are many alternatives.
 
-## OOP principles
+## Implementation and effective use of ‘advanced’ programming principles (with examples):
 
 Since class members are declared so that only functions within the class game can access them, line 59 is the first access specifier private. This access specifier was introduced to demonstrate encapsulation. Also, class members are available only when needed, as opposed to class members that are open and must be closed. 
 
-## Thoughtful statement 
+## Reflective review, opportunities to improve and continued professional development:
 
 One way to improve the development of this project would be to include an AI feature, such as player vs. computer. In the early stages of testing, more bugs occurred with this feature. One bug in particular was that the wrong 'winner' was displayed in the game. Consequently, the project would be less credible if it included this feature.
 

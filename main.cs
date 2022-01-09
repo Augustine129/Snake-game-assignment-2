@@ -121,18 +121,13 @@ using System.Text.RegularExpressions;
 
         private static void GameInstruction(int playerTurn)
         {
-            //Provide instructions of the game
-            //Greeting
+          
 
             Console.WriteLine("Welcome to Augustine Tic Tac Toe Game !!");
 
-            //Display player 1 is X and Player 2 is of
             Console.WriteLine("Player 1: X");
             Console.WriteLine("Player 2: O");
 
-
-            //Display which turn is it to play the game
-            //Tell the user to enter a number between 1 and 9
             Console.WriteLine($"Player {playerTurn} please select 1 throughout 9 from the game board ");
 
         }
