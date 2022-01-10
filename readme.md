@@ -55,4 +55,9 @@ Since class members are declared so that only functions within the class game ca
 
 One way to improve the development of this project would be to include an AI feature, such as player vs. computer. In the early stages of testing, more bugs occurred with this feature. One bug in particular was that the wrong 'winner' was displayed in the game. Consequently, the project would be less credible if it included this feature.
 
+Moreover I added the option where the user can choose which player they want to be
+and the option to quit the game which is not included on the demo.
+
+https://replit.com/@Augustine129/Tic-tac-toe-game#Screenshot%20(16).png
+
 For an OOP-based project, encapsulation was the best feature to include. However, there are three other principles, including abstraction, inheritance, and polymorphism, that would make this a pure OOP project.
