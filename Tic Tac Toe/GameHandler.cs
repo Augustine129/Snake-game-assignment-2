@@ -7,8 +7,6 @@
 
     // Any method from any accessible class or struct that matches
     // the delegate type can be assigned to the delegate.
-
-    // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/
-
+    
     public delegate void GameHandler(Player playerOne, Player playerTwo);
 }

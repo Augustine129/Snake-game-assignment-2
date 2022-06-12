@@ -6,13 +6,13 @@
         // It will determine if the player has won the match.
 
         // The moves of the player on the board.
-        private bool[,] moves;
+        private bool[,] _moves;
 
         // The x coordinate of the player's move.
-        private int x;
+        private int _x;
 
         // The y coordinate of the player's move.
-        private int y;
+        private int _y;
 
         private bool CheckDiagLeft()
         {
@@ -24,7 +24,7 @@
             for (var i = 0; i < MainForm.X; i++)
             {
                 // If the player is missing one move then it's not a win.
-                if (!moves[i, (MainForm.X - 1) - i])
+                if (!_moves[i, (MainForm.X - 1) - i])
                     return false;
             }
 
@@ -41,7 +41,7 @@
             for (var i = 0; i < MainForm.X; i++)
             {
                 // If the player is missing one move then it's not a win.
-                if (!moves[i, i])
+                if (!_moves[i, i])
                     return false;
             }
 
@@ -55,7 +55,7 @@
             for (var i = 0; i < MainForm.Y; i++)
             {
                 // If the player is missing one move then it's not a win.
-                if (!moves[x, i])
+                if (!_moves[_x, i])
                     return false;
             }
 
@@ -69,7 +69,7 @@
             for (var i = 0; i < MainForm.Y; i++)
             {
                 // If the player is missing one move then it's not a win.
-                if (!moves[i, y])
+                if (!_moves[i, _y])
                     return false;
             }
 
@@ -87,9 +87,9 @@
         {
             // Updates the data of the current move made by the player.
 
-            this.moves = moves;
-            this.x = x;
-            this.y = y;
+            _moves = moves;
+            _x = x;
+            _y = y;
         }
     }
 }
