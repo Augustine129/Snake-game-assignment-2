@@ -8,13 +8,13 @@ namespace Tic_Tac_Toe
     public class Player
     {
         // The criteria that need to be fulfilled for the player to win the match.
-        private readonly CheckGameWinner checkWinner;
+        private readonly CheckGameWinner _checkWinner;
 
         // The criteria that need to be fulfilled for the match to end as a draw.
-        private readonly CheckGameDraw checkGameDraw;
+        private readonly CheckGameDraw _checkGameDraw;
 
         // A random reference used when the player plays as the computer.
-        private readonly Random random;
+        private readonly Random _random;
         
         // The number of wins achieved from this player.
         public int Score { get; private set; }
@@ -23,7 +23,7 @@ namespace Tic_Tac_Toe
         private string GameΜark { get; set; }
         
         // The display name of the player.
-        public string PlayersΝame { get; private set; }
+        public string PlayersΝames { get; private set; }
         
         // The color of the player's mark in the board.
         public Color PlayerColour { get; private set; }
@@ -44,11 +44,11 @@ namespace Tic_Tac_Toe
         {
             // Initialize and create new objects.
             
-            checkWinner = new CheckGameWinner();
-            checkGameDraw = new CheckGameDraw();
-            random = new Random();
+            _checkWinner = new CheckGameWinner();
+            _checkGameDraw = new CheckGameDraw();
+            _random = new Random();
             PlayerColour = playerColour;
-            PlayersΝame = playerName;
+            PlayersΝames = playerName;
             PlayerLastMoveX = -1;
             PlayerLastMoveY = -1;
             ComputerPlayer = computerPlayer;
@@ -81,14 +81,12 @@ namespace Tic_Tac_Toe
             MainForm.GameMoves++;
 
             // Update the win goal criteria to take into account this specific move.
-            checkWinner.ChangeCurrentMove(Moves, x, y);
+            _checkWinner.ChangeCurrentMove(Moves, x, y);
 
             // Check if the move can result to a win, draw or just continue the match.
-            if (checkWinner.GoalScored())
+            if (_checkWinner.GoalScored())
                 return PlayersMoveState.Win;
-            if (checkGameDraw.GoalScored())
-                return PlayersMoveState.Draw;
-            return PlayersMoveState.Continues;
+            return _checkGameDraw.GoalScored() ? PlayersMoveState.Draw : PlayersMoveState.Continues;
         }
 
         public void AddWin()
@@ -109,13 +107,6 @@ namespace Tic_Tac_Toe
             // A 2-dimensional array that holds all nearby X, Y coordinates
             // relative to the last move made by the opponent.
             //
-            // Basically, we're retrieving all positions marked with asterisks below:
-            //
-            // *   *   *
-            // *   ~   *
-            // *   *   *
-
-            // We are searching for a nearby slot to block our opponent.
 
             int[,] options =
             {
@@ -158,7 +149,7 @@ namespace Tic_Tac_Toe
                 // then we can make a move relative to his last one.
 
                 // Get a random position relative to his last move.
-                var choice = validOptions[random.Next(validOptions.Count)];
+                var choice = validOptions[_random.Next(validOptions.Count)];
                 buttonX = choice[0];
                 buttonY = choice[1];
             }
@@ -169,8 +160,8 @@ namespace Tic_Tac_Toe
 
                 do
                 {
-                    buttonX = random.Next(MainForm.X);
-                    buttonY = random.Next(MainForm.Y);
+                    buttonX = _random.Next(MainForm.X);
+                    buttonY = _random.Next(MainForm.Y);
 
                     // We want to make sure our random move can be actually made.
                     // The button may have already been clicked, keep searching if that's the case.
@@ -184,7 +175,7 @@ namespace Tic_Tac_Toe
         public override string ToString()
         {
             // Overrides the default ToString() method, returns the name of the player instead.
-            return PlayersΝame;
+            return PlayersΝames;
         }
     }
 }
