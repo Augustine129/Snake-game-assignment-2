@@ -66,7 +66,7 @@ One way to improve the development of this project would be to include an AI fea
 Moreover I added the option where the user can choose which player they want to be
 and the option to quit the game which is not included on the demo.
 
-file:///C:/Users/User1/Downloads/Untitled%20document%20(1).pdf
+https://docs.google.com/document/d/1iDoRA81cRTb73LejppuUhl0s21NhZBfD00iW4xjwtFM/edit?usp=sharing
 
 For an OOP-based project, encapsulation was the best feature to include. However, there are three other principles, including abstraction, inheritance, and polymorphism, that would make this a pure OOP project.
 
