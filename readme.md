@@ -58,6 +58,7 @@ Classes also help to override any standard operator.
 
 
 
+
 ## Reflective review, opportunities to improve and continued professional development:
 
 One way to improve the development of this project would be to include an AI feature, such as player vs. computer. In the early stages of testing, more bugs occurred with this feature. One bug in particular was that the wrong 'winner' was displayed in the game. Consequently, the project would be less credible if it included this feature.
@@ -68,3 +69,10 @@ and the option to quit the game which is not included on the demo.
 https://replit.com/@Augustine129/Tic-tac-toe-game#Screenshot%20(16).png
 
 For an OOP-based project, encapsulation was the best feature to include. However, there are three other principles, including abstraction, inheritance, and polymorphism, that would make this a pure OOP project.
+
+
+
+##OOP Principles
+Composition
+
+It describes a class that references one or more objects of other classes in instance variables. One way I demostrated composonsition on this project
