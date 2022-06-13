@@ -1,5 +1,5 @@
 # Demo video can also be found in youtube
- https://youtu.be/oSLPzrZ6Spg
+ https://youtu.be/qiDDnEwwof0
 
 ## Tic-Tac-Toe built in C# Assigment 2
 
@@ -49,15 +49,6 @@ I also learned about code smells and refactoring. An example of code refactoring
 easy way to keep the data elements and methods together in one place, which helps organize the program better.
 Using classes also provides another functionality of this object-oriented programming paradigm, which is inheritance.
 Classes also help to override any standard operator.
-
-##Implementation and effective use of ‘advanced’ programming principles (with examples):
-
-
-
-
-
-
-
 
 ## Reflective review, opportunities to improve and continued professional development:
 
