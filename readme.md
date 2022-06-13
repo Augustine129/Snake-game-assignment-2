@@ -3,19 +3,19 @@
 
 ## Tic-Tac-Toe built in C# Assigment 2
 
-Tic-Tac-Toe is a very simple game for two players. So only two players can play at a time. This game is also known as Noughts and Crosses or Xs and Os game. One player plays with X and the other player plays with O. In this game, we have a board that consists of a 3X3 grid.
+Tic-Tac-Toe is a very simple game for two players. So only two players can play at a time. This game is also known as Noughts and Crosses or Xs and Os game.
 
 ## 1. challenge outline (academic standard: pass level detail: section required for pass) - 10%.
 
 #### a. *Summary and overview of the problem, general proposed solution. 
 
 - This is a clone of the classic tic-tac-toe game. 
-- At the beginning, the players' characters are shown: player 1 is X and player 2 is O. 
-- Then it is shown whose turn it is. 
-- Then the user is asked to enter a number between 1 and 9, which the player can use to keep track of his position. 
-- The game has 3 rows and 3 columns numbered from 1 to 9. 
-- When the player places markers on the board, the board is updated and the player is informed of his move. 
-- If there is a winner, a message will be displayed indicating which player has won. - If all markers have been placed and there is no winner, the game is tied and ends. - If there is no winner, the game continues.
+- At the beginning the user is greeted with the game setup form to select the blue or red player. 
+- Then the game begins in a five by five grid of clickable elements, similar to traditional tic-tac-toe.
+- The user's task is to beat the  computer player configured to make random moves by selecting empty spaces on the board.
+- As the game continues , we verify that our victory conditions are met by checking diagonally left, diagonally right, horizontally, and vertically.
+- If there is a winner, a message will be displayed indicating which player has won. 
+- If all markers have been placed and there is no winner, the game is tied and ends.
 
 #### b. *UML diagram illustrating the original overall solution. 
 
@@ -25,31 +25,38 @@ https://replit.com/@Augustine129/Tic-tac-toe-game#Screenshot%202022-01-08%20at%2
 
 My work plan is to break down the overall problem into smaller tasks, namely;
 
+- Menu (How do you play the game and which player go first)
 - Displaying the position of player 1.
 - Display of player 2's position.
-- Display of the 3 x 3 grid.
+- Display of the 5 x 5 grid.
+- Check if the position of the grid is valid or not
 
-Each task will be noted on my Kanban board and worked on individually, so I will take an agile approach to development. I will self-assess the quality of the code I have written through regular code reviews. This will help me identify errors in my code. Throughout the development process, I will validate all user input and internal processes.
-
-I have also decided to use version control. For this, I have used git. I created branches and PRs and merged the code into main.
+Before submitting my Tic Tac toe game, I worked locally on Rider to clean my code and resolve issues and fix bugs. This helped with the distribution of the 3x3 grid, I wanted
+to make sure the grid was efficiently sized and spaced.
 
 ## Analysis and decomposition of the overall problem into key ‘epic’ style tasks:
 
-My approach on creating this systm will be break down down the epic, into smallr stories that can be worked on
+My approach on creating this system will be break down down the epic, into smaller stories that can be worked on
 
 https://replit.com/@Augustine129/Tic-tac-toe-game#Screenshot%202022-01-08%20at%2021.23.03.png
 
-
-A key pre design challenge was to specify the winner in the game. The function winner should accept a board as input and return the winner of the board if there is one. If player 1 won the game, the function should return this result.
-
+An important challenge before the design was to determine who the winner of the game was.
+The winner function should accept a board as input and return the winner of the board if there is one.
+If player 1 or player 2 won the game, the function should return that result.76yu
 
 ## Analysis with embedded examples of key code refactoring, reuse, smells:
-I also learned about code smells and code refactoring. An example of code refactoring would be to use switch statements instead of if statements in line 48, because switch statements work faster and are usually more efficient. 
-The switch statement works better than multiple if statements when you enter input directly without performing condition checking in the statements. Switch statements work well when you want to improve code readability, and there are many alternatives.
+I also learned about code smells and refactoring. An example of code refactoring would be to have more classes that do certain things, which provides an 
+easy way to keep the data elements and methods together in one place, which helps organize the program better.
+Using classes also provides another functionality of this object-oriented programming paradigm, which is inheritance.
+Classes also help to override any standard operator.
 
-## Implementation and effective use of ‘advanced’ programming principles (with examples):
+##Implementation and effective use of ‘advanced’ programming principles (with examples):
 
-Since class members are declared so that only functions within the class game can access them, line 59 is the first access specifier private. This access specifier was introduced to demonstrate encapsulation. Also, class members are available only when needed, as opposed to class members that are open and must be closed. 
+
+
+
+
+
 
 ## Reflective review, opportunities to improve and continued professional development:
 
