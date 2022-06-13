@@ -75,4 +75,4 @@ For an OOP-based project, encapsulation was the best feature to include. However
 ##OOP Principles
 Composition
 
-It describes a class that references one or more objects of other classes in instance variables. One way I demostrated composonsition on this project
+It describes a class that references one or more objects of other classes in instance variables. One way I demostrated composonsition on this project is using it in the Form.cs.
