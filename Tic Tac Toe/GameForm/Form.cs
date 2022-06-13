@@ -96,7 +96,7 @@ namespace Tic_Tac_Toe
         private void EndGameDraw()
         {
             // Display a message box for the draw.
-            MessageBox.Show(@"Its a draw!!!", @"Match");
+            MessageBox.Show(@"The game ended with a draw", @"Match");
 
             // Reset the current game, prepare for the next one.
             ResetGame();
@@ -105,7 +105,7 @@ namespace Tic_Tac_Toe
         private void EndGameWin()
         {
             // Display a message box for the winner.
-            MessageBox.Show(_turn + @"Congratulation you won the game!", @"Match");
+            MessageBox.Show(_turn + @"Well done you won the game!", @"Match");
 
             // Add one to the total wins of the player.
             _turn.AddWin();

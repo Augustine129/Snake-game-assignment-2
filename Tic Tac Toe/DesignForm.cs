@@ -100,7 +100,7 @@ namespace Tic_Tac_Toe
             this._newMenuItemSection.Text = "New...";
             this._newMenuItemSection.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
+            // toolStripSeparatorOne
             // 
             this._toolStripSeparatorOne.Name = "_toolStripSeparatorOne";
             this._toolStripSeparatorOne.Size = new System.Drawing.Size(149, 6);
@@ -127,7 +127,7 @@ namespace Tic_Tac_Toe
             this._aboutMenuItemSection.Text = "About";
             this._aboutMenuItemSection.Click += new System.EventHandler(aboutToolStripMenuItem_Click);
             // 
-            // labelNamePlayer1
+            // labelNamePlayerOne
             // 
             this._assignNamePlayerOne.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -151,7 +151,7 @@ namespace Tic_Tac_Toe
             this.GameHeader.TabIndex = 28;
             this.GameHeader.Text = "Tic Tac Toe";
             // 
-            // labelNamePlayer2
+            // labelNamePlayerTwo
             // 
             this._assignNamePlayerTwo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -165,7 +165,7 @@ namespace Tic_Tac_Toe
             this._assignNamePlayerTwo.Text = "Player 2";
             this._assignNamePlayerTwo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelScorePlayer1
+            // labelScorePlayerOne
             // 
             this._showScorePlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -179,7 +179,7 @@ namespace Tic_Tac_Toe
             this._showScorePlayer1.Text = "0";
             this._showScorePlayer1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // labelScorePlayer2
+            // labelScorePlayerTwo
             // 
             this._showScorePlayer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -193,7 +193,7 @@ namespace Tic_Tac_Toe
             this._showScorePlayer2.Text = "0";
             this._showScorePlayer2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // buttonOne
             // 
             this._buttonOne.BackColor = System.Drawing.Color.Gainsboro;
             this._buttonOne.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -206,7 +206,7 @@ namespace Tic_Tac_Toe
             this._buttonOne.TabIndex = 32;
             this._buttonOne.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // buttonTwo
             // 
             this._buttonTwo.BackColor = System.Drawing.Color.Gainsboro;
             this._buttonTwo.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -219,7 +219,7 @@ namespace Tic_Tac_Toe
             this._buttonTwo.TabIndex = 33;
             this._buttonTwo.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // buttonThree
             // 
             this._buttonThree.BackColor = System.Drawing.Color.Gainsboro;
             this._buttonThree.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -232,7 +232,7 @@ namespace Tic_Tac_Toe
             this._buttonThree.TabIndex = 34;
             this._buttonThree.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // buttonFour
             // 
             this._buttonFour.BackColor = System.Drawing.Color.Gainsboro;
             this._buttonFour.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -245,7 +245,7 @@ namespace Tic_Tac_Toe
             this._buttonFour.TabIndex = 35;
             this._buttonFour.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // buttonFive
             // 
             this._buttonFive.BackColor = System.Drawing.Color.Gainsboro;
             this._buttonFive.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -258,7 +258,7 @@ namespace Tic_Tac_Toe
             this._buttonFive.TabIndex = 36;
             this._buttonFive.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // buttonSix
             // 
             this._buttonSix.BackColor = System.Drawing.Color.Gainsboro;
             this._buttonSix.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -271,7 +271,7 @@ namespace Tic_Tac_Toe
             this._buttonSix.TabIndex = 37;
             this._buttonSix.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // buttonSeven
             // 
             this._buttonSeven.BackColor = System.Drawing.Color.Gainsboro;
             this._buttonSeven.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -284,7 +284,7 @@ namespace Tic_Tac_Toe
             this._buttonSeven.TabIndex = 38;
             this._buttonSeven.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // buttonEight
             // 
             this._buttonEight.BackColor = System.Drawing.Color.Gainsboro;
             this._buttonEight.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -297,7 +297,7 @@ namespace Tic_Tac_Toe
             this._buttonEight.TabIndex = 39;
             this._buttonEight.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // buttonNine
             // 
             this._buttonNine.BackColor = System.Drawing.Color.Gainsboro;
             this._buttonNine.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -310,7 +310,7 @@ namespace Tic_Tac_Toe
             this._buttonNine.TabIndex = 40;
             this._buttonNine.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // buttonTen
             // 
             this._buttonTen.BackColor = System.Drawing.Color.Gainsboro;
             this._buttonTen.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -323,7 +323,7 @@ namespace Tic_Tac_Toe
             this._buttonTen.TabIndex = 41;
             this._buttonTen.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // buttonEleven
             // 
             this._button11.BackColor = System.Drawing.Color.Gainsboro;
             this._button11.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -336,7 +336,7 @@ namespace Tic_Tac_Toe
             this._button11.TabIndex = 42;
             this._button11.UseVisualStyleBackColor = false;
             // 
-            // button12
+            // buttonTwelve
             // 
             this._button12.BackColor = System.Drawing.Color.Gainsboro;
             this._button12.Cursor = System.Windows.Forms.Cursors.Hand;
