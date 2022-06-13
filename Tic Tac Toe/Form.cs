@@ -156,7 +156,9 @@ namespace Tic_Tac_Toe
             var button = (Button)sender;
 
             // Get the X and Y coordinates of the button.
-            var (x, y) = GetCoordinates(button);
+            var coords = GetCoordinates(button);
+            var x = coords.Key;
+            var y = coords.Value;
 
             // If the clicked button hasn't been used before then proceed.
             if (button.Text.Length == 0)
